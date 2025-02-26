@@ -12,6 +12,19 @@ let stringTreinta = '30'
 let numeroDiez = 10
 let stringDiez = '10'
 
+function CompararVariables(var1, var2) {
+  if (var1 === var2) {
+    console.log(`Las variables ${var1} y ${var2} tienen el mismo valor y el mismo tipo`)
+  } else {
+    console.log(`Las variables ${var1} y ${var2} no tienen el mismo tipo`)
+  }
+}
+
+CompararVariables(numeroUn, stringUn)
+CompararVariables(numeroTreinta, stringTreinta)
+CompararVariables(numeroDiez, stringDiez)
+
+
 
 // Comparar numeroUn y stringUn
 if (numeroUn == stringUn) {
