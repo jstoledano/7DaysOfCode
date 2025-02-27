@@ -16,13 +16,10 @@ let stringDiez = '10'
 // Comparar variables
 // Función que compara dos variables y muestra un mensaje en consola  
 // si los valores son iguales o diferentes
-function CompararVariables(var1, var2) {
-  if (var1 == var2) {
-    console.log(`Las variables ${var1} tipo ${typeof(var1)} y "${var2}" tipo ${typeof(var2)} tienen el mismo valor, pero tipos difernetes`)
-    } else {
-    console.log(`Las variables ${var1} y ${var2} no tienen el mismo valor`)
-  }
-}
+const CompararVariables = (var1, var2) => 
+  console.log(var1 == var2 
+    ? `Las variables ${var1} tipo ${typeof(var1)} y "${var2}" tipo ${typeof(var2)} tienen el mismo valor, pero tipos diferentes` 
+    : `Las variables ${var1} y ${var2} no tienen el mismo valor`)
 
 CompararVariables(numeroUn, stringUn)
 CompararVariables(numeroTreinta, stringTreinta)
