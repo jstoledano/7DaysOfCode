@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/jstoledano/7DaysOfCode/issues"
   },
-  "homepage": "https://github.com/jstoledano/7DaysOfCode#readme"
+  "homepage": "https://github.com/jstoledano/7DaysOfCode#readme",
+  "dependencies": {
+    "inquirer": "^12.4.2"
+  }
 }
