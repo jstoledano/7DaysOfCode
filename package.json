@@ -1,0 +1,24 @@
+{
+  "name": "7daysofcode",
+  "version": "1.0.0",
+  "description": "Reto #7DaysOfCode de Alura ONE.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jstoledano/7DaysOfCode.git"
+  },
+  "keywords": [
+    "javascript",
+    "alura",
+    "7daysofcode"
+  ],
+  "author": "Javier Sanchez Toledano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jstoledano/7DaysOfCode/issues"
+  },
+  "homepage": "https://github.com/jstoledano/7DaysOfCode#readme"
+}
