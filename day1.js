@@ -1,26 +1,31 @@
-// Lógica JS
-// Día 1 de 7 - Operaciones Booleanas 
+// Día 1 - Operaciones Booleanas
+const description =  `
+-- [[ Día 1 - Operaciones Booleanas ]] --
+Comparar variables
+Función que compara dos variables y muestra un mensaje
+en consola si los valores son iguales o diferentes.
+`
 
-// Por lo tanto, tu tarea de hoy es reescribir el código a 
-// continuación para que imprima la información de manera 
-// correcta, que tenga sentido y sin errores:
+// -- [[ INICIO ]] --
+const numeroUn      =   1
+const stringUn      =  '1'
+const numeroTreinta =  30
+const stringTreinta = '30'
+const numeroDiez    =  10
+const stringDiez    = '10'
 
-let numeroUn = 1
-let stringUn = '1'
-let numeroTreinta = 30
-let stringTreinta = '30'
-let numeroDiez = 10
-let stringDiez = '10'
-
-
-// Comparar variables
-// Función que compara dos variables y muestra un mensaje en consola  
-// si los valores son iguales o diferentes
-const CompararVariables = (var1, var2) => 
+const compararVariables = (var1, var2) => 
   console.log(var1 == var2 
     ? `Las variables ${var1} tipo ${typeof(var1)} y "${var2}" tipo ${typeof(var2)} tienen el mismo valor, pero tipos diferentes` 
     : `Las variables ${var1} y ${var2} no tienen el mismo valor`)
 
-CompararVariables(numeroUn, stringUn)
-CompararVariables(numeroTreinta, stringTreinta)
-CompararVariables(numeroDiez, stringDiez)
+const run = () => {
+  compararVariables(numeroUn, stringUn)
+  compararVariables(numeroTreinta, stringTreinta)
+  compararVariables(numeroDiez, stringDiez)
+}
+
+module.exports = {
+  description,
+  run
+}

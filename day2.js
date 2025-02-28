@@ -1,6 +1,6 @@
-/* ******   7DaysOfCode     *****
-   ****** Día 2 - Variables *****
-
+// Día 2 - Variables
+const description =  `
+-- [[ Día 2 - Variables ]] --
 Desarrollar un programa simulando una de esas aplicaciones. 
 Debe pedir al usuario responder 3 preguntas:
 - ¿Cuál es tu nombre?
@@ -24,12 +24,8 @@ Y luego, dependiendo de la respuesta, debería mostrar uno de
 los siguientes mensajes:
 
 1 > ¡Muy bien! Sigue estudiando y tendrás mucho éxito.
-
 2 > Oh, qué pena... ¿Ya intentaste aprender otros lenguajes?
-** */
-
-
-// importar el módulo readline
+`
 const readline = require('readline');
 
 let nombre = '';
@@ -50,14 +46,14 @@ const pregunta = (texto) => {
     });
 };
 
-const main = async () => {
-    nombre = await pregunta('¿Cuál es tu nombre?');
-    edad = await pregunta('¿Cuántos años tienes?');
-    lenguaje = await pregunta('¿Qué lenguaje de programación estás estudiando?');
+const censoProgramador = async () => {
+    nombre = await pregunta('¿Cuál es tu nombre? ');
+    edad = await pregunta('¿Cuántos años tienes? ');
+    lenguaje = await pregunta('¿Qué lenguaje de programación estás estudiando? ');
 
     console.log(`Hola ${nombre}, tienes ${edad} años y ya estás aprendiendo ${lenguaje}!`);
 
-    gusto = await pregunta(`¿Te gusta estudiar ${lenguaje}? Responde con el número 1 para SÍ o 2 para NO.`);
+    gusto = await pregunta(`¿Te gusta estudiar ${lenguaje}? Responde con el número 1 para SÍ o 2 para NO: `);
 
     if (gusto == 1) {
         console.log('¡Muy bien! Sigue estudiando y tendrás mucho éxito.');
@@ -68,4 +64,12 @@ const main = async () => {
     rl.close();
 };
 
-main();
+const run = () => {
+    censoProgramador()
+}
+
+module.exports = {
+    description,
+    run
+}
+
