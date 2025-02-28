@@ -1,6 +1,7 @@
 {
   "name": "7daysofcode",
   "version": "1.0.0",
+  "type": "module",
   "description": "Reto #7DaysOfCode de Alura ONE.",
   "main": "index.js",
   "scripts": {

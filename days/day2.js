@@ -26,25 +26,25 @@ los siguientes mensajes:
 1 > ¡Muy bien! Sigue estudiando y tendrás mucho éxito.
 2 > Oh, qué pena... ¿Ya intentaste aprender otros lenguajes?
 `
-const readline = require('readline');
+import * as readline from 'readline';
 
-let nombre = '';
+let nombre = ''
 let edad = 0;
-let lenguaje = '';
-let gusto = 0;
+let lenguaje = ''
+let gusto = 0
 
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
-});
+})
 
 const pregunta = (texto) => {
     return new Promise((resolve) => {
         rl.question(texto, (respuesta) => {
             resolve(respuesta);
-        });
-    });
-};
+        })
+    })
+}
 
 const censoProgramador = async () => {
     nombre = await pregunta('¿Cuál es tu nombre? ');
@@ -68,8 +68,4 @@ const run = () => {
     censoProgramador()
 }
 
-module.exports = {
-    description,
-    run
-}
-
+export { description, run };
