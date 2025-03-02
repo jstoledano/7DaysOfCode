@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/jstoledano/7DaysOfCode#readme",
   "dependencies": {
+    "@inquirer/prompts": "^7.3.2",
     "inquirer": "^12.4.2"
   }
 }
