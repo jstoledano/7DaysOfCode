@@ -1,6 +1,5 @@
 /* ** [[ Día 4 - Cíclos y Repeticiones ]] ** */
 
-// import { number } from '@inquirer/prompts';
 import number from '@inquirer/number';
 
 const description = `
@@ -17,7 +16,7 @@ era el número inicial.
 
 Después de  que el programa  esté funcionando, intenta usar  un número
 aleatorio en lugar de uno predefinido.
-`
+`;
 
 const numeroAleatorio = Math.floor(Math.random() * 10) + 1;
 let intentos = 3;
